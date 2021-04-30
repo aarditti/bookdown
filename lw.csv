@@ -1,0 +1,34 @@
+OBJECTID,Fire_name,Imagery_ID,Quantity,Location,Obscured,Setting,Burned,Area_m2,SHAPE_Length,SHAPE_Area
+1,Seeley,74,1,Overhanging,No,Bank,Unburned,1.993845224,11.79955851,1.993845208
+2,Seeley,74,40,Channel_Spanning,Many,Upstream,Partially Burned,139.7939453,83.47416491,139.7939487
+3,Seeley,74,2,Overhanging,Some,Bank,Partially Burned,4.509317875,17.76666456,4.509317886
+4,Seeley,74,1,Overhanging,No,Debris Flow,Partially Burned,1.57470715,10.47615665,1.574707095
+5,Seeley,74,1,Floodplain,No,Debris Flow,Partially Burned,1.208743691,7.42204393,1.20874371
+6,Seeley,74,1,Channel,No,Debris Flow,Partially Burned,0.906015873,8.794736068,0.906015883
+7,Seeley,74,1,Floodplain,No,Bank,Partially Burned,5.041738033,32.68522291,5.0417382
+8,Seeley,74,1,Floodplain,No,Bank,Partially Burned,2.525175571,13.88643643,2.525175554
+10,Seeley,74,1,Floodplain,No,Bank,Partially Burned,1.870049,12.22430952,1.87004902
+11,Seeley,74,1,Floodplain,No,Bank,Partially Burned,1.049624443,6.446254521,1.049624443
+12,Seeley,74,1,Overhanging,No,Upstream,Partially Burned,0.966526449,6.574678862,0.966526435
+13,Seeley,74,8,Overhanging,Many,NA,Burned,15.80743122,37.34451629,15.80743153
+14,Seeley,74,1,Floodplain,No,NA,Partially Burned,2.318891287,15.59554676,2.318891277
+15,Seeley,74,1,Floodplain,No,NA,Partially Burned,0.573515594,5.089264572,0.573515578
+18,Seeley,74,1,Channel_Spanning,No,Bank,Partially Burned,3.204344511,16.91324418,3.204344442
+20,Seeley,74,1,Channel,No,Bank,Partially Burned,1.290582776,6.730638465,1.29058283
+21,Seeley,74,1,Channel_Spanning,No,Bank,Burned,1.669664145,14.07194445,1.669664145
+22,Seeley,74,1,Floodplain,No,Bank,Partially Burned,0.752600431,5.029514704,0.75260044
+23,Seeley,74,1,Floodplain,No,Bank,Burned,3.54581809,18.71516762,3.545818174
+24,Seeley,74,1,Floodplain,No,Bank,Burned,1.759400725,14.96285571,1.759400698
+25,Seeley,74,1,Floodplain,No,Bank,Burned,1.41179812,12.40847886,1.411798147
+26,Seeley,74,1,Floodplain,No,Bank,Burned,1.424335122,14.83751875,1.424335159
+27,Seeley,74,1,Floodplain,No,Bank,Burned,2.290189028,13.77973282,2.290188984
+28,Seeley,74,1,Floodplain,No,Bank,Burned,1.421224713,9.470180664,1.421224698
+29,Seeley,74,1,Floodplain,No,Bank,Burned,3.853131294,21.17296492,3.853131333
+31,Seeley,74,1,Floodplain,No,Bank,Burned,1.892951131,15.03721968,1.892951103
+33,Seeley,74,1,Floodplain,No,Bank,Burned,1.366206884,15.82987947,1.366206848
+34,Seeley,74,1,Floodplain,No,Bank,Burned,1.79145062,18.51585371,1.791450666
+35,Seeley,74,1,Floodplain,No,Bank,Burned,1.388135672,12.2813492,1.388135684
+37,Seeley,74,2,Floodplain,No,Bank,Burned,1.392646909,9.458444429,1.392646936
+38,Seeley,74,1,Floodplain,No,Bank,Partially Burned,1.339021444,13.37414873,1.339021461
+39,Seeley,74,2,Overhanging,Unclear,NA,Partially Burned,10.11081028,28.02428588,10.1108103
+40,Seeley,74,1,Floodplain,No,NA,Partially Burned,0.807601511,7.567054538,0.80760154

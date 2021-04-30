@@ -1,0 +1,29 @@
+# Graphs
+
+The graphs below show the breakdown of my initial data.
+
+## Fires by different landcover characteristics
+install.packages("plotly")
+library("plotly") # load
+utahfires <- read.csv('C:/Users/BelmontLab/Documents/Alec/Research/Site_Selection/Graph/Cluster-Analysis.csv', stringsAsFactors = F)
+xval=utahfires$`PerModHigh`
+yval=utahfires$`Per_Con`
+zval=utahfires$`TwoThreepercent`
+fig <- plot_ly(x =xval, y=yval, z=zval, color= utahfires$`Class`, colors = c('#BF382A', '#0C4B8E','#4AC6B7', '#1972A4', '#965F8A', '#FF7070', '#C61951'), 
+               size =utahfires$`Acres`,text=utahfires$`Fire_Name`,
+               marker = list(symbol = 'circle', sizemode = 'diameter'), sizes = c(5, 50))
+                                                                            
+fig <- fig %>% layout(scene = list(xaxis = list(title = '% Moderate/High Severity'),
+                                   yaxis = list(title = '% Conifer'),
+                                   zaxis = list(title = '% Slope>23?')))
+fig
+
+## Months that aerial imagery is available for
+
+##Density graph of size of wood features
+
+##Wood features by Setting
+
+## Size of wood features in each channel location
+
+## Obscured by burn severity

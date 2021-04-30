@@ -1,0 +1,162 @@
+Fire_Name,Acreage,Avg_slope,Per_conifer,Severity,Burn,Slope,Trees,Class,DebrisFlowFire
+NORTH MOORE,2365,6.771180153,6.815919876,85.55560303,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+SHEEP CREEK,1471,30.28009987,6.629829884,52.22019958,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+LOWER EBBS,15483,25.27009964,10.54520035,63.57699966,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+FLY CANYON,4412,41.18349838,15.43000031,55.30049896,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+SAND LEDGES,1494,2.256599903,4.328139782,73.39320374,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+PINYON,1612,20.61730003,3.791300058,56.53630066,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+LOST LAKE,1341,8.358189583,43.76010132,69.10700226,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+WHITE ROCK,1925,4.442820072,4.20634985,56.81349945,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+HORSE,1083,20.15360069,37.75439835,52.99259949,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+BROKEN RIDGE,4479,5.848770142,13.44419956,54.78570175,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+BIG POLE,1381,35.35900116,7.520870209,59.82789993,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+LITTLE PINE,1323,36.89490128,13.28689957,60.75080109,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+MACHINE GUN,1790,17.5522995,7.487999916,52.8987999,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+AUGUSI,5338,35.64289856,36.5848999,62.02399826,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+PLAYGROUND,1381,5.414629936,4.439199924,52.69139862,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+WILDFLOWER,2673,42.78540039,14.53479958,58.3594017,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+222,3242,28.95560074,12.38669968,60.45980072,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+SHEEP,6805,21.64529991,15.80220032,59.64730072,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+DOTS,2492,23.51650047,10.60830021,71.00039673,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+FAUST,1444,36.66790009,10.57470036,50.96770096,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",No
+SHINGLE,21388,23.51350021,39.59790039,52.70600128,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",Yes
+BLIND CANYON,1409,8.627530098,39.10749817,68.26959991,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",Yes
+LAKE FORK,1920,48.61029816,42.19800186,56.32780075,High Severity,Shallow,Less LW,"High Severity, Shallow, Less LW",Yes
+HILL TOP,1365,9.42689991,60.65819931,63.15919876,High Severity,Shallow,LW,"High Severity, Shallow, LW",No
+CHURCH CAMP,1279,41.59970093,57.84799957,53.56819916,High Severity,Shallow,LW,"High Severity, Shallow, LW",No
+RAT HOLE,11159,23.55050087,50.60290146,62.73730087,High Severity,Shallow,LW,"High Severity, Shallow, LW",No
+HORSE VALLEY,2298,5.52655983,63.26250076,63.87900162,High Severity,Shallow,LW,"High Severity, Shallow, LW",No
+MILL FLAT,35071,48.79359818,67.25789642,78.75350189,High Severity,Shallow,LW,"High Severity, Shallow, LW",No
+SOLOMON BASIN WFM,2431,17.48200035,57.99909973,63.14459991,High Severity,Shallow,LW,"High Severity, Shallow, LW",No
+COOPER SPRING,2546,11.37119961,67.90769958,76.97589874,High Severity,Shallow,LW,"High Severity, Shallow, LW",No
+BRIANHEAD,2562,15.84189987,80.26589966,57.94279861,High Severity,Shallow,LW,"High Severity, Shallow, LW",Yes
+WEST VALLEY,6500,41.8730011,88.15899658,54.3185997,High Severity,Shallow,LW,"High Severity, Shallow, LW",Yes
+COAL HOLLOW,8107,39.6053009,67.97090149,69.42469788,High Severity,Shallow,LW,"High Severity, Shallow, LW",Yes
+SADDLE,5159,63.99810028,34.83539963,62.50370026,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",No
+SAWMILL,10840,51.39569855,8.499549866,57.96369934,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",No
+JOCKS CANYON,13100,50.31890106,4.344230175,59.71590042,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",No
+BALD MOUNTAIN,2239,50.43280029,44.6867981,58.02870178,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",No
+RED LEDGES,4226,56.6310997,23.16489983,64.4865036,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",No
+COFFEE POT,2455,50.37770081,4.39605999,52.05419922,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",No
+TUNNEL HOLLOW,11003,74.16819763,13.61019993,65.70120239,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",No
+LION PEAK,131432,59.15330124,6.685659885,65.10919952,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",No
+LEVAN,1302,53.90439987,12.38840008,74.25409698,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",No
+SEELEY,4492,61.06340027,34.94350052,62.09280014,High Severity,Steep,Less LW,"High Severity, Steep, Less LW",Yes
+BEAR TRAP,14538,80.13990021,71.20400238,68.40209961,High Severity,Steep,LW,"High Severity, Steep, LW",No
+QUAIL,3986,83.99189758,67.4905014,53.86520004,High Severity,Steep,LW,"High Severity, Steep, LW",No
+AMOS CANYON WFM,1771,59.91239929,75.07510376,50.96760178,High Severity,Steep,LW,"High Severity, Steep, LW",No
+TRAIL MOUNTAIN,3717,63.7519989,64.04250336,54.16910172,High Severity,Steep,LW,"High Severity, Steep, LW",Yes
+TWITCHELL CANYON,1638,50.93790054,66.93060303,63.8932991,High Severity,Steep,LW,"High Severity, Steep, LW",Yes
+HICKS CREEK,2331,37.43519974,37.6529007,44.34379959,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WEST ANTELOPE,3797,20.3560009,0,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WEST GOVERNMENT CREEK,9215,23.85400009,23.05870056,24.92819977,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+TRIBAL,13226,0,0,11.02110004,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+BOX CANYON,10609,36.65579987,48.13380051,45.71099854,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+CEDAR,1190,0,0,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+PETERSON HOLLOW,4592,19.60829926,44.15650177,31.95429993,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+PORCUPINE,2438,15.44569969,34.93310165,19.93759918,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+CARRINGTON ISLAND,14398,1.931439996,0,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+CEDAR MOUNTAIN,5431,23.71080017,3.9807899,4.358270168,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+DUTCH MOUNTAIN,5169,12.61279964,0.300110996,9.105609894,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+PUDDLE,21016,0,0,6.1105299,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+SKULL VALLEY,102426,0,0,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+COTTONWOOD TRAIL,1784,0,0,1.947829962,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+LIGHT SAGE,2070,0,0,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+LINCOLN BEACH,7016,41.0904007,4.147729874,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+DAVIS,43386,4.810200214,1.853469968,14.65079975,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+LITTLE VALLEY,1573,10.85169983,25.40049934,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+MILE MARKER 166,1549,0.403553993,0.672842026,47.84579849,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+MACK SHAFT,1809,0.351305991,0.190840006,9.862939835,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+LONG RIDGE,1589,49.5387001,13.45059967,2.077559948,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+STREAM,5676,0,0,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+CEDAR HILLS,46763,0.00379366,2.625339985,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+SALLY,2040,12.49279976,0.071814001,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WILDCAT,5659,0.319490999,4.728280067,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+DESERET,1732,2.382989883,0.029818101,4.462779999,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+KELTON,3418,0,0,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+SHAW SPRINGS,2204,0.0207224,0,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+GOOSE CREEK,4450,11.49160004,34.00910187,27.07530022,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+RAFT RIVER,19419,4.237840176,41.00849915,28.25639915,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+HANSEL POINT,2062,9.864450455,22.08300018,6.245359898,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+GORING,1336,15.68780041,2.175280094,37.2580986,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+ROUGH CANYON,1552,49.17440033,9.045249939,35.92430115,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+BLACK,1531,44.57289886,32.4367981,26.89789963,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+ELLERBECK,16155,34.69900131,4.390739918,5.76060009,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+IRON HILL,1367,43.97460175,1.779889941,2.785700083,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+BENDER MOUNTAIN,1971,19.71050072,42.12960052,38.30870056,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+CEDAR MOUNTAIN ONE,1952,44.9435997,32.02510071,25.42060089,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+LAKESIDE,1809,35.00439835,3.176000118,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+HORSE VALLEY,1895,1.015599966,2.748179913,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+NORTH EDEN,20453,6.560689926,1.339409947,13.67269993,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+POLE CREEK,3250,39.13550186,39.02610016,46.35350037,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+HAG 1,2527,8.73816967,0,5.506680012,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+DALLAS CANYON,5603,14.24590015,4.964369774,4.195660114,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+IBAPAH,3118,0,0.0566171,11.51099968,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+73,1858,1.242720008,2.927249908,0.432622999,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+A R,5441,1.573809981,0.418513,24.81559944,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+OPHIR CREEK,1333,0,0,6.716169834,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+DUMP,7696,45.94400024,4.967649937,14.1843996,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WOOD HOLLOW,1701,5.873159885,16.30579948,15.10789967,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+BUTTE,9719,13.10149956,0,0.512821019,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+LONG CANYON,2852,3.370599985,3.915250063,3.48623991,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WOLF DEN,2504,12.89640045,17.10050011,26.39380074,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+BOX CREEK,5067,8.793769836,34.71730042,37.02220154,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+GLENANNA,2563,26.25790024,5.324409962,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+GREASE,12708,0.336035997,0.147119001,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+SE CEDAR,1940,0.612951994,1.661239982,19.36949921,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WEST TWIN PEAK,1523,5.832590103,0.022553001,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+HURRICANE ASSIST 02,41579,21.45019913,2.150899887,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+QUAIL,2107,8.387390137,0.702315986,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+NEW HARMONY,5299,0.563421011,10.74989986,32.84740067,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+BABOON,2967,4.625840187,4.193560123,13.30300045,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+RESERVE,4076,16.07999992,8.243829727,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+ROUNDABOUT,1291,1.164809942,12.39760017,37.81280136,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+SAWMILL CANYON,2031,33.08800125,34.91199875,45.88029861,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WHITE VALLEY,1114,23.83440018,0.039184999,48.82450104,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WHITE ROCKS 1,3110,3.102540016,1.857360005,22.34090042,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+OMG,31011,41.75510025,6.099559784,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WEST MOUNTAIN,2934,44.34700012,10.57859993,4.304969788,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+SHIVWITS,1708,47.47249985,9.156590462,12.56340027,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+HANSEL VALLEY,29562,1.354979992,1.358759999,3.603329897,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+THIRTY TWO,2018,0.276753008,0,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+STATE,1657,38.41279984,7.92911005,39.98049927,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+ROCKPORT,5515,15.49890041,7.700779915,41.23899841,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+ANTELOPE,4603,20.28289986,5.109809875,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+BLACK MOUNTAIN,1142,0.836597025,4.37071991,20.65379906,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+ANACONDA,5373,0.519342005,1.930950046,9.05012989,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+ROUGH HAUL,3039,0.542482018,0.227525994,7.252309799,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+PONY,1504,2.861730099,6.457839966,41.96179962,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+TAYLOR MOUNTAIN ROAD,1171,2.674740076,2.034689903,6.652150154,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+RHYOLITE,4356,22.38269997,3.159490108,18.83119965,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+RED BUTTE,1036,2.252919912,4.034609795,6.428410053,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+BROAD MOUTH,2965,33.66799927,0.550076008,46.47499847,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+PEPLIN,10265,0.930215001,0.0187952,5.5071702,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+COTTONWOOD,22155,5.308609962,0.149030998,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+BARN,4109,15.37979984,6.200940132,11.06750011,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WRANGLER,1978,2.432029963,0.884908974,2.093359947,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+JERICHO,1899,3.773819923,5.858320236,14.37679958,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+WESTSAHARA,21009,0,0,0.335040987,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+GOOSENEST,7097,15.05560017,7.397960186,0,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+CHAPARRAL,1195,39.07709885,4.801320076,0.37251699,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+LAKESIDE,1415,23.04430008,0.614090979,5.40279007,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+MAPLECANYON,8505,42.00910187,19.95910072,2.79418993,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+LOCOMOTIVE,2230,0,0,4.543900013,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+RATTLESNAKEPASS,1127,0.916985989,0.076593101,30.46879959,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",No
+CLAY SPRINGS,1306,34.75220108,15.15799999,23.40819931,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",Yes
+POLE CREEK,1745,14.47360039,40.08739853,3.758150101,Low Severity,Shallow,Less LW,"Low Severity, Shallow, Less LW",Yes
+BRIGGS,16165,38.18420029,57.43119812,36.3728981,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",No
+TANK HOLLOW,5008,44.0658989,58.85820007,35.79069901,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",Yes
+RIGGS,6124,31.05380058,87.90910339,43.72969818,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",No
+WILLOW PATCH,1454,14.27970028,73.99079895,39.39920044,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",No
+COVE CREEK,74276,29.6508007,78.37069702,43.41759872,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",No
+BLACK MOUNTAIN,18342,16.8715992,66.50430298,13.26860046,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",No
+MURDOCK,11914,31.8757,87.22850037,36.10020065,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",No
+LAKE CREEK,30239,3.467619896,79.30059814,32.8893013,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",No
+BRIDGE,69817,13.74810028,75.54769897,47.01029968,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",No
+SOLITUDE,44626,32.33530045,55.83929825,38.52640152,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",No
+DOLLAR RIDGE,107391,40.76549911,52.86259842,48.21260071,Low Severity,Shallow,LW,"Low Severity, Shallow, LW",Yes
+BLACK MOUNTAIN,8122,60.59939957,5.053919792,10.94480038,Low Severity,Steep,Less LW,"Low Severity, Steep, Less LW",No
+CHOKE CHERRY,2443,51.23880005,22.82489967,33.14709854,Low Severity,Steep,Less LW,"Low Severity, Steep, Less LW",No
+SHANTY CANYON,2331,50.27719879,0,0,Low Severity,Steep,Less LW,"Low Severity, Steep, Less LW",No
+MILLVILLE,42956,81.52929688,16.39369965,36.05830002,Low Severity,Steep,Less LW,"Low Severity, Steep, Less LW",No
+PATCH SPRINGS,2137,54.57339859,18.45509911,35.70230103,Low Severity,Steep,Less LW,"Low Severity, Steep, Less LW",No

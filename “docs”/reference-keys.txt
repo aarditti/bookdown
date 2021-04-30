@@ -1,0 +1,14 @@
+introduction
+overview-of-project
+project-background
+data
+datasets
+database-structure
+build-the-database
+metrics
+graphs
+fires-by-different-landcover-characteristics
+months-that-aerial-imagery-is-available-for
+size-of-wood-features-in-each-channel-location
+obscured-by-burn-severity
+final-words

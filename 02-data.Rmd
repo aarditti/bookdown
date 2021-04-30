@@ -19,7 +19,7 @@ LW (large wood) data will be collected for each fire based on available satellit
 
 ![Figure 1- Database Schema](schema.png)
 
-## Build the Database
+# Build the Database
 ```{r library, eval=TRUE, echo=FALSE, warning=FALSE}
 library(DBI)
 ```
@@ -34,46 +34,94 @@ Then I will add each dataset to the database and link them
 1. Fires
 ```{r fires, eval = FALSE, echo = TRUE}
 dbExecute(lw, "CREATE TABLE Fires (
-Fire_name varchar(25) NOT NULL,
+Fire_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+Fire_Name varchar(25),
 Acreage varchar(5),
 Avg_slope varchar(5),
 Per_conifer varchar(5),
 Severity varchar(5),
-PRIMARY KEY (Fire_name)
+Burn varchar(25),
+Slope varchar(25),
+Trees varchar(25),
+Class varchar(25),
+DebrisFlowFire varchar(3)
 );")
 ```
 
+```{r fires2, eval = FALSE, echo = TRUE}
+fires <- read.csv("C:/Users/BelmontLab/Documents/Alec/School/Spring 2021/Full Lifecycle of Data Management/Bookdown/Bookdown- LW/Fires.csv")
+
+Fires$Fire_ID <- 1:nrow(fires)
+
+dbWriteTable(lw, "Fires", fires, append = TRUE)
+```
+
+```{r fires3, eval = TRUE, echo = TRUE}
+fires<-dbGetQuery(lw, "SELECT * FROM Fires;")
+```
+
+
 2. Imagery
 ```{r imagery, eval = FALSE, echo = TRUE}
-dbExecute(lw, "CREATE TABLE Satellite_Imagery (
-Imagery_ID varchar(2) NOT NULL,
-Platform varchar(25),
-Month varchar(10),
-Year char(4),
+dbExecute(lw, "CREATE TABLE Aerial_Imagery (
+Imagery_ID INTEGER PRIMARY KEY AUTOINCREMENT,
 Fire_name varchar(25),
-PRIMARY KEY (Imagery_ID),
+Type varchar(50),
+Fire_Year char(4),
+years varchar(10),
+Source varchar(25),
+year char(4),
 FOREIGN KEY (Fire_name) REFERENCES Fires(Fire_name)
 );")
+```
+
+```{r imagery2, eval = FALSE, echo = TRUE}
+imagery <- read.csv("C:/Users/BelmontLab/Documents/Alec/School/Spring 2021/Full Lifecycle of Data Management/Bookdown/Bookdown- LW/aerial.csv") 
+
+names(imagery)[1] <- "Fire_name"
+
+imagery<-imagery %>% 
+     pivot_longer(`Before`:`Year.8`, values_to = "Source", names_to = "years") %>% mutate(year = stringr::word(Source, 2, 2, " "), Source = stringr::word(Source, 1, 1, " ")) 
+
+imagery$Imagery_ID <- 1:nrow(imagery)
+
+dbWriteTable(lw, "Aerial_Imagery", imagery, append = TRUE)
+```
+
+```{r imagery3, eval = TRUE, echo = TRUE}
+aerial<-dbGetQuery(lw, "SELECT * FROM Aerial_Imagery;")
 ```
 
 3. Large Wood
 ```{r large wood, eval = FALSE, echo = TRUE}
+
 dbExecute(lw, "CREATE TABLE LW_DATA (
-Object_ID varchar(3) NOT NULL,
+OBJECTID varchar(3) NOT NULL,
 Fire_name varchar(25),
 Imagery_ID varchar(2),
-SHAPE char(5),
 Quantity varchar(3),
-Location varchar(20) CHECK (Location IN ('In Channel', 'Channel & Floodplain', 'Only in floodplain', 'Crosses entire channel')),
-Obscured varchar(20) CHECK (Obscured IN ('No pieces obscured', 'Some pieces obscured',' Many pieces obscured')),
-Setting varchar(20), CHECK (Setting IN ('Fluvial', 'Debris Flow'))
+Location varchar(20) CHECK (Location IN ('Channel', 'Overhanging', 'Floodplain', 'Channel_Spanning')),
+Obscured varchar(20) CHECK (Obscured IN ('No', 'Some','Many','Unclear')),
+Setting varchar(20) CHECK (Setting IN ('Upstream', 'Debris Flow','Bank','NA')),
+Burned varchar(20),
 Area_m2 varchar(5),
-Shape_Length varchar(5),
-Shape_Area varchar(5),
-PRIMARY KEY (Object_ID),
+SHAPE_Length varchar(5),
+SHAPE_Area varchar(5),
+PRIMARY KEY (OBJECTID),
 FOREIGN KEY (Fire_name) REFERENCES Fires(Fire_name)
-FOREIGN KEY (Imagery_ID) REFERENCES Satellite_Imagery(Imagery_ID)
+FOREIGN KEY (Imagery_ID) REFERENCES Aerial_Imagery(Imagery_ID)
 );")
 ```
+
+```{r large wood2, eval = FALSE, echo = TRUE}
+lw_table <- read.csv("C:/Users/BelmontLab/Documents/Alec/School/Spring 2021/Full Lifecycle of Data Management/Bookdown/Bookdown- LW/lw.csv") 
+
+dbWriteTable(lw, "LW_DATA", lw_table, append = TRUE)
+```
+
+```{r large wood3, eval = TRUE, echo = TRUE}
+lw_data<-dbGetQuery(lw, "SELECT * FROM LW_DATA;")
+```
+
 
 > "That's all folks!"

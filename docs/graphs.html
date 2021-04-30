@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Final Words | Large Wood Impacts on Sediment Transport Following Wildfire</title>
+  <title>Chapter 5 Graphs | Large Wood Impacts on Sediment Transport Following Wildfire</title>
   <meta name="description" content="This shows my work for my Reproducible Data Science Class. I am a graduate student at Utah State University in the Watershed Sciences Department" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Final Words | Large Wood Impacts on Sediment Transport Following Wildfire" />
+  <meta property="og:title" content="Chapter 5 Graphs | Large Wood Impacts on Sediment Transport Following Wildfire" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Final Words | Large Wood Impacts on Sediment Transport Following Wildfire" />
+  <meta name="twitter:title" content="Chapter 5 Graphs | Large Wood Impacts on Sediment Transport Following Wildfire" />
   
   <meta name="twitter:description" content="This shows my work for my Reproducible Data Science Class. I am a graduate student at Utah State University in the Watershed Sciences Department" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="graphs.html"/>
-<link rel="next" href="references.html"/>
+<link rel="prev" href="metrics.html"/>
+<link rel="next" href="final-words.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -172,19 +172,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="final-words" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> Final Words</h1>
-<p>Thank you for a great class! My dataset is not complete (will probably take a few years to complete) but I have a headstart on things.
-Hope to see you and Diego around!</p>
+<div id="graphs" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Graphs</h1>
+<p>The graphs below show the breakdown of my initial data.</p>
+<div id="fires-by-different-landcover-characteristics" class="section level2">
+<h2><span class="header-section-number">5.1</span> Fires by different landcover characteristics</h2>
+<p>install.packages(“plotly”)
+library(“plotly”) # load
+utahfires &lt;- read.csv(‘C:/Users/BelmontLab/Documents/Alec/Research/Site_Selection/Graph/Cluster-Analysis.csv’, stringsAsFactors = F)
+xval=utahfires<span class="math inline">\(`PerModHigh` yval=utahfires\)</span><code>Per_Con</code>
+zval=utahfires<span class="math inline">\(`TwoThreepercent` fig &lt;- plot_ly(x =xval, y=yval, z=zval, color= utahfires\)</span><code>Class</code>, colors = c(‘#BF382A’, ‘#0C4B8E’,‘#4AC6B7’, ‘#1972A4’, ‘#965F8A’, ‘#FF7070’, ‘#C61951’),
+size =utahfires<span class="math inline">\(`Acres`,text=utahfires\)</span><code>Fire_Name</code>,
+marker = list(symbol = ‘circle’, sizemode = ‘diameter’), sizes = c(5, 50))</p>
+<p>fig &lt;- fig %&gt;% layout(scene = list(xaxis = list(title = ‘% Moderate/High Severity’),
+yaxis = list(title = ‘% Conifer’),
+zaxis = list(title = ‘% Slope&gt;23?’)))
+fig</p>
+</div>
+<div id="months-that-aerial-imagery-is-available-for" class="section level2">
+<h2><span class="header-section-number">5.2</span> Months that aerial imagery is available for</h2>
+<p>##Density graph of size of wood features</p>
+<p>##Wood features by Setting</p>
+</div>
+<div id="size-of-wood-features-in-each-channel-location" class="section level2">
+<h2><span class="header-section-number">5.3</span> Size of wood features in each channel location</h2>
+</div>
+<div id="obscured-by-burn-severity" class="section level2">
+<h2><span class="header-section-number">5.4</span> Obscured by burn severity</h2>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="graphs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="metrics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

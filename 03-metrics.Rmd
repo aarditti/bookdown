@@ -1,8 +1,9 @@
 # Metrics
 
-Various metrics on my data
+**Various metrics on my data:**
 
-Sites with the most available aerial imagery
+## Temporal Resolution of Imagery at Different Fires
+**Sites with the most available aerial imagery**
 ```{r most aerial, eval = TRUE, echo = TRUE}
 number<-aerial%>%
   filter(year!='NA')%>%
@@ -10,8 +11,8 @@ number<-aerial%>%
   tally() %>% 
   arrange(desc(n))
 ```
-First and last years of data
-```{r range aerial, eval = TRUE, echo = TRUE}
+**First and last years of data**
+```{r range aerial, eval = TRUE, echo = TRUE, warning=FALSE}
 range<-aerial%>%
     group_by(Fire_Name) %>%
     filter(year!='NA')%>%
@@ -19,7 +20,7 @@ range<-aerial%>%
               max_year=max(year))
 ```
 
-Site with the greatest frequency of imagery
+**Site with the greatest frequency of imagery**
 ```{r frequency aerial, eval = TRUE, echo = TRUE}
 range%>%
   filter(min_year != "") %>% 
@@ -31,8 +32,8 @@ range%>%
 ```
 We can see that Box Canyon and Pole Creek have the most available imagery for their time period and will have the highest temporal resolution for analysis.
 
-
-Wood Features broken down as individual pieces and jams
+## Number of each type of Feature vs Pieces per Feature
+**Wood Features broken down as individual pieces and jams**
 ```{r count of wood, eval = TRUE, echo = TRUE}
 woodnumber<-lw_data%>%
   mutate(Feature_type = case_when(
@@ -41,8 +42,8 @@ woodnumber<-lw_data%>%
   group_by(Feature_type) %>% 
   tally()
 ```
-Wood Features broken down by amount of wood in each type
-```{r amount of wood, eval = TRUE, echo = TRUE}
+**Wood Features broken down by amount of wood in each type**
+```{r amount of wood, eval = TRUE, echo = TRUE, warning=FALSE}
 woodamount<-lw_data%>%
   mutate(Feature_type = case_when(
     Quantity=="1" ~ "Individual Piece",
@@ -56,7 +57,7 @@ woodnumber %>%
 ```
 While the majority of features are individual pieces, most of the wood is stored in wood jams.
 
-How much area does the average wood piece take up?
+## How much area does the average wood piece take up?
 ```{r wood size, eval = FALSE, echo = TRUE}
 lw_data%>%
   select(Area_m2,Quantity) %>% 

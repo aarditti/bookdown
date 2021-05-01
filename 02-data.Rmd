@@ -122,7 +122,7 @@ lw_table <- read.csv("C:/Users/BelmontLab/Documents/Alec/School/Spring 2021/Full
 dbWriteTable(lw, "LW_DATA", lw_table, append = TRUE)
 ```
 
-```{r large wood3, eval = TRUE, echo = TRUE}
+```{r large wood3, eval = TRUE, echo = TRUE,warning=FALSE}
 lw_data<-dbGetQuery(lw, "SELECT * FROM LW_DATA;")
 ```
 

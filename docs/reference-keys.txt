@@ -6,9 +6,14 @@ datasets
 database-structure
 build-the-database
 metrics
+temporal-resolution-of-imagery-at-different-fires
+number-of-each-type-of-feature-vs-pieces-per-feature
+how-much-area-does-the-average-wood-piece-take-up
 graphs
 fires-by-different-landcover-characteristics
+predictor-variable-representation
 density-graph-of-size-of-wood-features
+wood-features-by-setting
 size-of-wood-features-in-each-channel-location
 obscured-by-burn-severity
 final-words

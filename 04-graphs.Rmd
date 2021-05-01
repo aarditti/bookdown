@@ -4,11 +4,11 @@ The graphs below show the breakdown of my initial data.
 
 ## Fires by different landcover characteristics
 
-```{r plotly, eval = TRUE, echo = TRUE}
+```{r plotly, eval = TRUE, echo = FALSE, warning=FALSE}
 library("plotly") # load
 ```
 We can see of each fire by it's severity, slope and wood generation values.
-```{r 3d, eval = TRUE, echo = TRUE}
+```{r 3d, eval = TRUE, echo = TRUE, warning=FALSE}
 fires %>% 
   plot_ly(x =fires$Severity, y=fires$Per_conifer, z=fires$Avg_slope, color= fires$Class, colors = c('#BF382A', '#0C4B8E','#4AC6B7', '#1972A4', '#965F8A','#FF7070', '#C61951'), 
                size =as.numeric(fires$Acreage),text=fires$Fire_Name,
@@ -17,14 +17,16 @@ fires %>%
                                    yaxis = list(title = '% Conifer'),
                                    zaxis = list(title = '% Slope>23?')))
 ```
-We can see of each fire by it's severity, slope and wood generation values.                                                                            
-## Predictor Variable Representation
+
+We can see of each fire by it's severity, slope and wood generation values.                                                                    
+
+##  Predictor Variable Representation
 ```{r fmsb, eval = TRUE, echo = FALSE}
 
 library(fmsb)
 ```
 
-```{r predictor, eval = TRUE, echo = FALSE}
+```{r predictor, eval = TRUE, echo = TRUE}
 slope<-fires %>% 
   group_by(Slope) %>% 
   tally()
@@ -43,21 +45,26 @@ maxpredictor<-max(data)
 data <- rbind(rep(maxpredictor,10) , rep(0,10) , data)
 radarchart(data,pfcol=rgb(0.2,0.5,0.5,0.5))
 ```
+
 In this spider plot, we can see which predictor variable characteristics most fires have.
 
 ## Density graph of size of wood features
 ```{r wood area, eval = TRUE, echo = TRUE}
 lw_data %>% 
-  ggplot(mapping = aes(x=as.numeric(Area_m2), fill= "coral"))+
+  mutate(Feature_type = case_when(
+    Quantity=="1" ~ "Individual Piece",
+    TRUE ~ "Wood Jam")) %>%
+  ggplot(mapping = aes(x=as.numeric(Area_m2),fill= Feature_type))+
            geom_density()+
-    labs(x = "Size of wood pieces (m2)-log10", y="Density")+
+    labs(x = "Size of wood pieces (m2)-log10", y="Density", fill="Wood Feature Type")+
    scale_x_log10()+
    theme_dark()+
-     theme(legend.position = "none")+
     ggtitle("Size variation in in-stream wood")+
   theme(plot.title = element_text(hjust = 0.5))
 ```
-This graph shows the majority of wood features are between 1-2 m2. These most likely account for individual pieces.
+
+This graph shows the majority of wood features are between 1-2 m2. But by divying it up we can see that wood features that constitute wood jams are on average 10 m2.
+
 ## Wood features by Setting
 ```{r by setting, eval = TRUE, echo = TRUE}
 lw_data %>% 
@@ -69,6 +76,7 @@ lw_data %>%
         ggtitle("The amount of wood features from each source")+
         theme(plot.title = element_text(hjust = 0.5))
 ```
+
 We can see from this graph that most wood features arrive in the stream channel from falling in place off the bank.
 
 ## Size of wood features in each channel location
@@ -81,6 +89,7 @@ lw_data %>%
         ggtitle("Number of Wood Pieces based Channel Location")+
       theme(plot.title = element_text(hjust = 0.5))
 ```
+
 The more wood pieces, the more likely the feature is to take up the entire channel or at least be in the channel and floodplain.
 
 ## Obscured by burn severity
@@ -89,4 +98,5 @@ lw_data %>%
   ggplot(mapping=aes(fill=Burned, y=Quantity, x=Obscured)) + 
     geom_bar(position="stack", stat="identity")
 ```
+
 We can see from this plot that more wood is obscured in burned areas.

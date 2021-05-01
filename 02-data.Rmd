@@ -68,20 +68,20 @@ fires<-dbGetQuery(lw, "SELECT * FROM Fires;")
 ```{r imagery, eval = TRUE, echo = TRUE}
 dbExecute(lw, "CREATE TABLE Aerial_Imagery (
 Imagery_ID INTEGER PRIMARY KEY AUTOINCREMENT,
-Fire_name varchar(25),
+Fire_Name varchar(25),
 Type varchar(50),
 Fire_Year char(4),
 years varchar(10),
 Source varchar(25),
 year char(4),
-FOREIGN KEY (Fire_name) REFERENCES Fires(Fire_name)
+FOREIGN KEY (Fire_Name) REFERENCES Fires(Fire_Name)
 );")
 ```
 
 ```{r imagery2, eval = TRUE, echo = TRUE}
 imagery <- read.csv("C:/Users/BelmontLab/Documents/Alec/School/Spring 2021/Full Lifecycle of Data Management/Bookdown/Bookdown- LW/aerial.csv") 
 
-names(imagery)[1] <- "Fire_name"
+names(imagery)[1] <- "Fire_Name"
 
 imagery<-imagery %>% 
      pivot_longer(`Before`:`Year.8`, values_to = "Source", names_to = "years") %>% mutate(year = stringr::word(Source, 2, 2, " "), Source = stringr::word(Source, 1, 1, " ")) 
@@ -100,7 +100,7 @@ aerial<-dbGetQuery(lw, "SELECT * FROM Aerial_Imagery;")
 
 dbExecute(lw, "CREATE TABLE LW_DATA (
 OBJECTID varchar(3) NOT NULL,
-Fire_name varchar(25),
+Fire_Name varchar(25),
 Imagery_ID varchar(2),
 Quantity varchar(3),
 Location varchar(20) CHECK (Location IN ('Channel', 'Overhanging', 'Floodplain', 'Channel_Spanning')),
@@ -111,7 +111,7 @@ Area_m2 varchar(5),
 SHAPE_Length varchar(5),
 SHAPE_Area varchar(5),
 PRIMARY KEY (OBJECTID),
-FOREIGN KEY (Fire_name) REFERENCES Fires(Fire_name)
+FOREIGN KEY (Fire_Name) REFERENCES Fires(Fire_Name)
 FOREIGN KEY (Imagery_ID) REFERENCES Aerial_Imagery(Imagery_ID)
 );")
 ```

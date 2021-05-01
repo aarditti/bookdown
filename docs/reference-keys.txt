@@ -8,7 +8,7 @@ build-the-database
 metrics
 graphs
 fires-by-different-landcover-characteristics
-months-that-aerial-imagery-is-available-for
+density-graph-of-size-of-wood-features
 size-of-wood-features-in-each-channel-location
 obscured-by-burn-severity
 final-words

@@ -6,14 +6,14 @@ Sites with the most available aerial imagery
 ```{r most aerial, eval = TRUE, echo = TRUE}
 number<-aerial%>%
   filter(year!='NA')%>%
-  group_by(Fire_name) %>% 
+  group_by(Fire_Name) %>% 
   tally() %>% 
   arrange(desc(n))
 ```
 First and last years of data
 ```{r range aerial, eval = TRUE, echo = TRUE}
 range<-aerial%>%
-    group_by(Fire_name) %>%
+    group_by(Fire_Name) %>%
     filter(year!='NA')%>%
     summarize(min_year=min(year),
               max_year=max(year))
@@ -24,7 +24,7 @@ Site with the greatest frequency of imagery
 range%>%
   filter(min_year != "") %>% 
   mutate(range=as.numeric(max_year)-as.numeric(min_year)+1) %>% 
-  left_join(number, by="Fire_name") %>% 
+  left_join(number, by="Fire_Name") %>% 
   mutate(freq_per_yr=n/range) %>% 
   mutate(freq_per_yr=round(freq_per_yr,1)) %>% 
   arrange(desc(freq_per_yr))
@@ -54,6 +54,7 @@ woodamount<-lw_data%>%
 woodnumber %>% 
   left_join(woodamount, by="Feature_type")
 ```
+While the majority of features are individual pieces, most of the wood is stored in wood jams.
 
 How much area does the average wood piece take up?
 ```{r wood size, eval = FALSE, echo = TRUE}
@@ -62,3 +63,5 @@ lw_data%>%
   mutate(wood_size=as.numeric(Area_m2)/as.numeric(Quantity)) %>% 
   summarize(mean_wood_size=mean(wood_size))
 ```
+
+This corroborates with the density plot. Most logs studied are about 2 m2 in area.

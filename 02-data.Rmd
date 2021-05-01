@@ -22,6 +22,9 @@ LW (large wood) data will be collected for each fire based on available satellit
 # Build the Database
 ```{r library, eval=TRUE, echo=FALSE, warning=FALSE}
 library(DBI)
+library(dplyr)
+library(magrittr)
+library(tidyverse)
 ```
 First I will connect to the database:
 
@@ -32,7 +35,7 @@ lw <- dbConnect(RSQLite::SQLite(), "C:/Users/BelmontLab/Documents/Alec/School/Sp
 Then I will add each dataset to the database and link them
 
 1. Fires
-```{r fires, eval = FALSE, echo = TRUE}
+```{r fires, eval = TRUE, echo = TRUE}
 dbExecute(lw, "CREATE TABLE Fires (
 Fire_ID INTEGER PRIMARY KEY AUTOINCREMENT,
 Fire_Name varchar(25),
@@ -48,10 +51,10 @@ DebrisFlowFire varchar(3)
 );")
 ```
 
-```{r fires2, eval = FALSE, echo = TRUE}
+```{r fires2, eval = TRUE, echo = TRUE}
 fires <- read.csv("C:/Users/BelmontLab/Documents/Alec/School/Spring 2021/Full Lifecycle of Data Management/Bookdown/Bookdown- LW/Fires.csv")
 
-Fires$Fire_ID <- 1:nrow(fires)
+fires$Fire_ID <- 1:nrow(fires)
 
 dbWriteTable(lw, "Fires", fires, append = TRUE)
 ```
@@ -62,7 +65,7 @@ fires<-dbGetQuery(lw, "SELECT * FROM Fires;")
 
 
 2. Imagery
-```{r imagery, eval = FALSE, echo = TRUE}
+```{r imagery, eval = TRUE, echo = TRUE}
 dbExecute(lw, "CREATE TABLE Aerial_Imagery (
 Imagery_ID INTEGER PRIMARY KEY AUTOINCREMENT,
 Fire_name varchar(25),
@@ -75,7 +78,7 @@ FOREIGN KEY (Fire_name) REFERENCES Fires(Fire_name)
 );")
 ```
 
-```{r imagery2, eval = FALSE, echo = TRUE}
+```{r imagery2, eval = TRUE, echo = TRUE}
 imagery <- read.csv("C:/Users/BelmontLab/Documents/Alec/School/Spring 2021/Full Lifecycle of Data Management/Bookdown/Bookdown- LW/aerial.csv") 
 
 names(imagery)[1] <- "Fire_name"
@@ -93,7 +96,7 @@ aerial<-dbGetQuery(lw, "SELECT * FROM Aerial_Imagery;")
 ```
 
 3. Large Wood
-```{r large wood, eval = FALSE, echo = TRUE}
+```{r large wood, eval = TRUE, echo = TRUE}
 
 dbExecute(lw, "CREATE TABLE LW_DATA (
 OBJECTID varchar(3) NOT NULL,
@@ -113,7 +116,7 @@ FOREIGN KEY (Imagery_ID) REFERENCES Aerial_Imagery(Imagery_ID)
 );")
 ```
 
-```{r large wood2, eval = FALSE, echo = TRUE}
+```{r large wood2, eval = TRUE, echo = TRUE}
 lw_table <- read.csv("C:/Users/BelmontLab/Documents/Alec/School/Spring 2021/Full Lifecycle of Data Management/Bookdown/Bookdown- LW/lw.csv") 
 
 dbWriteTable(lw, "LW_DATA", lw_table, append = TRUE)

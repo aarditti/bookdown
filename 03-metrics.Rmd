@@ -2,10 +2,63 @@
 
 Various metrics on my data
 
-Site with the most available aerial imagery
+Sites with the most available aerial imagery
+```{r most aerial, eval = TRUE, echo = TRUE}
+number<-aerial%>%
+  filter(year!='NA')%>%
+  group_by(Fire_name) %>% 
+  tally() %>% 
+  arrange(desc(n))
+```
+First and last years of data
+```{r range aerial, eval = TRUE, echo = TRUE}
+range<-aerial%>%
+    group_by(Fire_name) %>%
+    filter(year!='NA')%>%
+    summarize(min_year=min(year),
+              max_year=max(year))
+```
 
 Site with the greatest frequency of imagery
+```{r frequency aerial, eval = TRUE, echo = TRUE}
+range%>%
+  filter(min_year != "") %>% 
+  mutate(range=as.numeric(max_year)-as.numeric(min_year)+1) %>% 
+  left_join(number, by="Fire_name") %>% 
+  mutate(freq_per_yr=n/range) %>% 
+  mutate(freq_per_yr=round(freq_per_yr,1)) %>% 
+  arrange(desc(freq_per_yr))
+```
+We can see that Box Canyon and Pole Creek have the most available imagery for their time period and will have the highest temporal resolution for analysis.
 
-Total Wood Features with multiple pieces
 
+Wood Features broken down as individual pieces and jams
+```{r count of wood, eval = TRUE, echo = TRUE}
+woodnumber<-lw_data%>%
+  mutate(Feature_type = case_when(
+    Quantity=="1" ~ "Individual Piece",
+    TRUE ~ "Wood Jam")) %>% 
+  group_by(Feature_type) %>% 
+  tally()
+```
+Wood Features broken down by amount of wood in each type
+```{r amount of wood, eval = TRUE, echo = TRUE}
+woodamount<-lw_data%>%
+  mutate(Feature_type = case_when(
+    Quantity=="1" ~ "Individual Piece",
+    TRUE ~ "Wood Jam")) %>%
+  group_by(Feature_type) %>% 
+  summarize(sumQ=sum(as.numeric(Quantity)))
+```
+```{r compare, eval = TRUE, echo = TRUE}
+woodnumber %>% 
+  left_join(woodamount, by="Feature_type")
+```
 
+How much area does the average wood piece take up?
+```{r wood size, eval = FALSE, echo = TRUE}
+lw_data%>%
+  select(Area_m2,Quantity) %>% 
+  mutate(wood_size=as.numeric(Area_m2)/as.numeric(Quantity)) %>% 
+  summarize(mean_wood_size=mean(wood_size))
+```
